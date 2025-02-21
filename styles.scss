@@ -1,0 +1,504 @@
+// variables
+$primary-color: #3a0072; // colores
+$secondary-color: black;
+$highlight-color: white;
+$shadow-color: 0 6px 12px rgba(0, 0, 0, 0.8);
+$background-color: rgba(58, 0, 114, 0.9);
+$hover-color: #b1b1b1;
+$font-size-lg: 30px; // tamaños
+$font-size-md: 20px;
+$font-size-sm: 16px;
+$text-font: "Orbitron", sans-serif; // fuentes
+$body-font: "Outfit", sans-serif;
+
+// global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body, html{
+        height: 100%;
+        h2{
+            font-size: $font-size-lg; 
+            font-family: $text-font;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+        p, li , label, span{
+            font-family: $body-font;
+            font-size: $font-size-sm;
+        }
+        h5{
+            font-size: $font-size-md; 
+            text-shadow: $shadow-color;
+            font-family: $text-font;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+    }
+    .none-container{
+        padding-top: 80px;
+    }
+}
+
+.main-content{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+// navbar
+.navbar{
+    background-color: $background-color;
+    box-shadow: $shadow-color;
+    .navbar-brand{
+        margin-left: 20px;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+    }
+      
+    .navbar-toggler {
+        position: relative;
+        z-index: 1050;
+        margin-left: auto;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+    .social-icon {
+        margin-right: 20px;
+        color: $hover-color;
+        transition: color 0.3s ease, transform 0.3s ease; 
+        font-size: $font-size-md;
+        .social-icon:hover {
+            color: $highlight-color; 
+            transform: scale(1.1);
+        }
+    }
+}
+
+// carrusel de fotos
+#carousel {
+    padding-top: 40px;
+    width: 100%;
+    height: 50vh;
+    #carousel img{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+    .carousel-item {
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .carousel-caption-custom {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $highlight-color;
+        text-shadow: $shadow-color;
+        font-size: 2rem;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .carousel-item.active .carousel-caption-custom {
+        opacity: 1;
+    }
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%); 
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    li {
+        background-color: #b1b1b1;
+        margin: 0 5px;
+        list-style: none;
+    }
+}
+.carousel-indicators .active {
+    background-color: $highlight-color;
+}
+
+.carousel-texts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+// mapa
+.container-maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+    border: 2px solid $highlight-color;
+    border-radius: 10px;
+    box-shadow: $shadow-color;
+    .maps {
+        flex: 2;
+        min-width: 300px;
+        height: 300px;
+        display: flex;
+    }
+    .maps-text {
+        flex: 1; 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+// noticias
+.news-title{
+    h2{
+        text-shadow: none !important; 
+    }
+}
+
+.news{
+    width: 100%; 
+    height: 200px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primary-color; 
+    border-right: none;
+    border-left: none;
+    text-decoration: none;
+    color: $highlight-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-bottom: none;
+    img{
+        max-width: 150px;
+        margin-right: 50px;
+        height: auto;
+    }
+}
+  
+.news-text{
+    width: 500px;
+    height: auto;
+    h2{
+        font-size: $font-size-md;
+        font-family: $text-font;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: $highlight-color;
+        padding-bottom: 5px; 
+    }
+    h4{
+        font-size: $font-size-lg;
+        font-family: $text-font;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: $highlight-color;
+        padding-bottom: 5px;
+    }
+}
+
+.new-icon {
+    display: inline-block;
+    padding: 5px 5px; 
+    background-color: $primary-color; 
+    color: $highlight-color; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    text-align: center; 
+    box-shadow: $shadow-color;
+    animation: shake 0.6s ease-out forwards;
+}
+
+// stream
+.suscribe-icon{
+    padding: 5px 5px; 
+    background-color: $primary-color; 
+    color: $highlight-color; 
+    border-radius: 5px; 
+    font-weight: bold;  
+    box-shadow: $shadow-color;
+    animation: shake 0.6s ease-out forwards;
+}
+  
+.video-container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+  
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// rules
+.rules-container{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    h5{
+        font-size: $font-size-lg;
+        padding-bottom: 5px;
+    }    
+}
+  
+.rules-title{
+    h2{
+    font-size: $font-size-lg;
+    font-family: $text-font;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: $highlight-color;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 100px;
+    }
+}
+  
+.rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    li {
+        margin: 0.5rem 0;
+        padding-left: 2rem;
+        position: relative;
+    }
+    li::before {
+        content: "📌";
+        position: absolute;
+        left: 0;
+        font-size: 1.5rem;
+    }
+}
+
+//contacto
+.container-form h2{
+    font-size: 20px;
+    font-family: $text-font;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+  
+.form-contact{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 20px; 
+    border: 2px solid #ccc;
+    border-radius: 10px; 
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.form-contact textarea{
+    resize: none;
+}
+  
+.container-form{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 55px;
+}
+  
+.mail-info{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer; 
+}
+  
+.phone-info{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  
+.mail-info:hover span {
+    text-decoration: underline; 
+}
+  
+.phone-info:hover span {
+    text-decoration: underline;
+}
+
+// footer 
+footer{
+    background-color: $background-color;
+    .social-icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .social-icon {
+        margin-right: 20px;
+        color: $hover-color;
+        transition: color 0.3s ease, transform 0.3s ease;   
+    }
+    .social-icon:hover {
+        color: $hover-color; 
+        transform: scale(1.1);
+    }
+}
+
+// efectos
+
+.social-icon:hover {
+    color: white; 
+    transform: scale(1.1);
+}
+
+.zoom-effect {
+    transition: transform 0.3s ease;
+}
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+.social-icon:hover {
+    color: $highlight-color; 
+    transform: scale(1.1);
+}
+.shake-effect {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+.shake-effect:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+//keyframe
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+// responsive
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+      padding-left: 10px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .maps{
+      flex: 1;
+      min-width: 165px;
+      height: 165px;
+    }
+    .maps-title h2{
+      font-size: 30px;
+    }
+    .maps-text p{
+      font-size: 12px;
+    }
+  
+    .news-title{
+      padding-top: 50px;
+    }
+  
+    .news-title h2{
+      font-size: 22px;
+    }
+  
+    .news-text h4{
+      font-size: 16px;
+    }
+    .news-text h2{
+      font-size: 12px;
+    }
+  
+    .news-text p{
+      font-size: 10px;
+    }
+    .news{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .video-container {
+      max-width: 90%;
+    }
+    .container-form{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+}

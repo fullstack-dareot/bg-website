@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ícono y título -->
+    <title>🅱oisGang - Nos vemos en Brackets 🔥</title>
+    <link rel="shortcut icon" href="resources/icon.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- info -->
+    <meta name="description" name="Únete a la comunidad de platform fighting games de la Isla de Margarita y compite en torneos de Smash Bros Ultimate, Tekken 8 y Rivals of Aether 2. Participa en eventos presenciales y online, enfrenta a los mejores jugadores y forma parte de la creciente escena FGC. ¡Demuestra tu habilidad y haz historia en los eSports! Nos vemos en Brackets!">
+    <meta name="keywords" content="eSports, Venezuela, Smash Bros Ultimate, Tekken 8, Rivals of Aether 2, torneos de videojuegos, competencias gaming, fighting games, FGC, comunidad gamer, eventos de eSports, torneos de Smash, torneos de Tekken, torneos de Rivals of Aether, gaming competitivo, jugadores profesionales, eSports Venezuela, FGC Venezuela, videojuegos de pelea">
+  </head>
+
+  <body class="bg-black text-white"> <!-- cuerpo -->
+      <!-- barra de navegación -->
+      <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top opacity-80">
+                <!-- logotipo -->
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid shake-effect d-inline-block align-top" 
+                         src="resources/logotype.png" 
+                         alt="BoisGang Logotype" width="200">
+                </a>
+    
+                <!-- botón del menú hamburguesa -->
+                <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarnav" aria-controls="navbarnav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- menú desplegable -->
+                <div class="collapse navbar-collapse menu-dropdown" id="navbarnav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="index.html" class="nav-link active">Inicio</a></li>
+                        <li class="nav-item active"><a href="pages/news.html" class="nav-link">Noticias</a></li>
+                        <li class="nav-item active"><a href="pages/stream.html" class="nav-link">Stream</a></li>
+                        <li class="nav-item active"><a href="pages/rules.html" class="nav-link">Reglamento</a></li>
+                        <li class="nav-item active"><a href="pages/contact.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- redes sociales -->
+                <span class="navbar-text ml-auto d-none d-sm-block">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/boisgang" target="_blank" class="social-icon"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://www.instagram.com/_boisgang/" target="_blank" class="social-icon"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="https://x.com/BoisGang_" target="_blank" class="social-icon"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="https://t.me/+FKO9LDgXTssxNjlh" target="_blank" class="social-icon"><i class="bi bi-telegram fs-4"></i></a>
+                        <a href="https://www.youtube.com/@boisgang" target="_blank" class="social-icon"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </span>
+            </nav>
+        </div>
+      </header>
+      <main>
+        <!-- carrusel de fotos -->
+        <div id="carousel" class="carousel slide">
+          <ol class="carousel-indicators position-absolute bottom-0 start-50 translate-middle-x d-flex justify-content-center w-100 p-0 m-0">
+            <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel" data-bs-slide-to="3"></li>
+          </ol>
+
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <!-- imagen 1 -->
+              <div class="carousel-item active">
+                <img src="resources/slider/slider-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption-custom">
+                  <h2>¡Bienvenido a BoisGang!</h2>
+                </div>
+              </div>
+                
+            <!-- imagen 2 -->
+              <div class="carousel-item">
+                <img src="resources/slider/slider-2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption-custom">
+                  <h2 class="text-start">¿Quiénes somos?</h2><p class="text-start">Somos un equipo de esports comprometido con la competencia y la comunidad. Participamos y organizamos torneos, creando un espacio para jugadores apasionados y fortaleciendo la escena local de los Fighting Games.</p>
+                </div>
+              </div>
+                
+            <!-- imagen 3 -->
+              <div class="carousel-item">
+                <img src="resources/slider/slider-3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption-custom">
+                  <h2 class="text-start">¿Dónde Iniciamos?</h2><p class="text-start">Iniciamos nuestro equipo como un grupo de amigos en la Universidad de Margarita, unidos por Super Smash Bros. Organizamos torneos y crecimos, fortaleciendo nuestra comunidad y la emoción competitiva.</p>
+                </div>
+              </div>
+                
+            <!-- imagen 4 -->
+              <div class="carousel-item">
+                <img src="resources/slider/slider-4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption-custom">
+                  <h2 class="text-start">Nuestro objetivo</h2><p class="text-start">Queremos fortalecer la comunidad de los eSports, fomentar la competencia y crear un espacio donde la pasión por los videojuegos sea una experiencia compartida y memorable.</p>
+                </div>
+              </div>
+            </div>
+                
+            <!-- Indicadores y controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- competencias -->
+        <div class="container mt-5 pt-5 text-center">
+          <h2>🏆 Competencias 🏆</h2>
+          <p class="lead" style="font-size: 18px; max-width: 800px; margin: 0 auto;">Nuestros Main Events:</p>
+        </div>
+        <div class="container pt-4 pb-2">
+          <div class="row text-center">
+          <!-- competencia 1 -->
+            <div class="col-md-4 mb-4 d-flex flex-column align-items-center">
+              <a href="https://www.nintendo.com/es-ar/store/products/super-smash-bros-ultimate-switch/" target="_blank"><img src="resources/competences/smash.png" class="img-fluid zoom-effect" alt="Super Smash Bros. Ultimate"></a>
+              <h5 class="mt-3"><strong>Plataforma: Nintendo Switch 🎮</strong></h5>
+              <p>El juego de lucha definitivo para Nintendo Switch, con personajes icónicos y escenarios con plataformas, ideal para todos los niveles.</p>
+            </div>
+          <!-- competencia 2 -->
+            <div class="col-md-4 mb-4 d-flex flex-column align-items-center">
+              <a href="https://store.steampowered.com/app/2217000/Rivals_of_Aether_II/" target="_blank"><img src="resources/competences/rivals.png" class="img-fluid zoom-effect" alt="Rivals of Aether 2"></a>
+              <h5 class="mt-3"><strong>Plataforma: PC 💻</strong></h5>
+              <p>Secuela del aclamado juego indie de lucha, ahora en 3D, con combates frenéticos y un elenco inspirado en elementos de la naturaleza.</p>
+            </div>
+          <!-- competencia 3 -->
+            <div class="col-md-4 mb-4 d-flex flex-column align-items-center">
+              <a href="https://store.steampowered.com/app/1778820/TEKKEN_8/?l=spanish" target="_blank"><img src="resources/competences/tekken.png" class="img-fluid zoom-effect" alt="Tekken 8"></a>
+              <h5 class="mt-3"><strong>Plataforma: PC 💻</strong></h5>
+              <p>Franquicia legendaria de lucha con artes marciales realistas, personajes icónicos y mecánicas profundas para el competitivo.</p>
+            </div>
+          </div>
+        </div>
+        <!-- mapa -->
+        <div class="container-maps m-5">
+          <div class="maps">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.123456789!2d-63.1234567!3d10.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPlaya+El+Ángel!5e0!3m2!1ses!2sve!4v1673023456789"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="maps-text">
+            <div class="maps-title">
+              <h2>¿Dónde nos ubicamos?</h2>
+            </div>
+            <p>🇻🇪 Venezuela - 🌊 Isla de Margarita 🌴</p>
+          </div>
+        </div>
+        <!-- patrocinadores -->
+        <div class="container text-center">
+          <h2>💸 Patrocinadores 💸</h2>
+          <p class="lead" style="font-size: 18px; max-width: 800px; margin: 0 auto;">Nuestros sponsors:</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-5 mb-5">
+          <a href="https://www.instagram.com/smashvenezuela.gg/" target="_blank"><img src="resources/sponsors/1.png" class="img-fluid zoom-effect" alt="Smash Venezuela"></a>
+          <a href="https://www.instagram.com/mundogames1.0/" target="_blank"><img src="resources/sponsors/2.png" class="img-fluid zoom-effect" alt="MundoGames"></a>
+          <a href="https://www.instagram.com/hubnetworkingmgta/" target="_blank"><img src="resources/sponsors/3.png" class="img-fluid zoom-effect" alt="Hub Networking"></a>
+        </div>
+      <!-- footer -->
+      <footer class="text-white text-center py-2 mt-2">
+        <span class="navbar-text ml-auto">
+          <div class="social-icons justify-content-center align-items-center">
+            <a href="https://www.facebook.com/boisgang" target="_blank" class="social-icon"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="https://www.instagram.com/_boisgang/" target="_blank" class="social-icon"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="https://x.com/BoisGang_" target="_blank" class="social-icon"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="https://t.me/+FKO9LDgXTssxNjlh" target="_blank" class="social-icon"><i class="bi bi-telegram fs-4"></i></a>
+            <a href="https://www.youtube.com/@boisgang" target="_blank" class="social-icon"><i class="bi bi-youtube fs-4"></i></a>
+          </div>
+          <p class="mt-2">&copy; 2025 BoisGang. Todos los derechos reservados.</p>
+        </span>
+      </footer>
+    </div>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
